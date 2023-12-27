@@ -164,6 +164,13 @@
   background-color: #0056b3;
 }
 
+#logo {
+  font-size: 2em; /* Tamaño más grande para el logo */
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.5em; /* Tamaño más grande para los botones en la barra de navegación */
+}
 
 
 @media (max-width: 600px) {
