@@ -1,0 +1,194 @@
+.card-body.producto {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  transition: font-size 0.3s ease;
+}
+
+.card-body.producto.descripcion-larga {
+  font-size: 14px;
+}
+
+.image-container {
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px;
+}
+
+.zoomable-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.zoomable-image:hover {
+  transform: scale(1.2);
+}
+
+
+.producto-checkbox {
+  margin: 5px;
+  background-color: blue;
+  color: white;
+}
+#formulario-overlay {
+  z-index: 1000; /* Un valor mayor que el z-index del contenedor de productos */
+  /* Otros estilos... */
+}
+
+#productoCheckbox-123 {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#productoCheckbox-123:checked {
+  background-color: #007bff;
+  color: #fff;
+}
+
+#cotizacion {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 400px;
+  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding: 5px;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  display: none; /* Inicialmente oculto */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+
+.formulario,
+#formulario {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px; /* Ajusta el ancho según tus preferencias */
+  width: calc(100% - 10cm); /* Ancho del 100% menos 5cm a cada lado */
+  margin: 5cm auto; /* Margen superior e inferior de 5cm, centrado horizontalmente */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Necesario para posicionar el botón de cierre */
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #007bff;
+  font-size: 24px; /* Tamaño de la letra ajustado */
+}
+
+#formulario h2 {
+  color: #343a40;
+  margin-bottom: 20px; /* Aumentado el espacio entre el título y el contenido */
+  font-size: 28px; /* Tamaño de la letra ajustado */
+}
+
+#formulario label {
+  display: block;
+  margin: 15px 0; /* Aumentado el espacio alrededor de las etiquetas */
+  color: #495057;
+  font-size: 16px; /* Tamaño de la letra ajustado */
+}
+
+#formulario input {
+  width: 100%;
+  padding: 12px; /* Aumentado el relleno de los campos de entrada */
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+#formulario button {
+  background-color: #007bff;
+  color: white;
+  padding: 14px; /* Aumentado el relleno del botón */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 18px; /* Tamaño de la letra ajustado */
+}
+
+#formulario button:hover {
+  background-color: #0056b3;
+}
+
+
+
+@media (max-width: 600px) {
+  #formulario,
+  #lista-carrito-form {
+    width: 100%;
+    max-width: none;
+  }
+}
+#lista-carrito-form {
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 10px; /* Ajuste de margen superior */
+  padding-right: 10px; /* Agregado para compensar el espacio que ocupa la barra de desplazamiento vertical */
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-right: 15px; /* Agregado para evitar que el contenido se superponga a la barra de desplazamiento */
+}
+
+#cart-list-form {
+  max-height: 300px; /* ajusta la altura máxima según sea necesario */
+  overflow-y: auto; /* agrega un scroll vertical si es necesario */
+}
+
