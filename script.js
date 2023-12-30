@@ -132,6 +132,12 @@ function cargarProducto() {
     inputElement.value = "Comercial";
     cargarProducto();
   });
+  escolarButton.addEventListener("click", function () {
+    inputElement.value = "Oficina"
+    inputElement.value = "Escolar"
+    ;
+    cargarProducto();
+  });
 }
 
 function resetearPagina() {
